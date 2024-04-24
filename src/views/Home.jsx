@@ -13,7 +13,7 @@ const layout_sx = {
         marginLeft:'0px',
         padding:'10px',
         justifyContent:'center',
-        height:{xs:'1000px',md:'auto'},
+        height:{xs:'auto',md:'auto'},
 
 
 
@@ -21,7 +21,7 @@ const layout_sx = {
     grid_item_1:{
 
         margin:'10px',
-        display:'flex',
+        display: {xs:'none',md:"flex"},
         justifyContent:'center',
         alignItems:'center',
     },
@@ -34,7 +34,7 @@ const layout_sx = {
     },
     grid_item_3:{
 
-        display:'flex',
+        display: {xs:'none',md:"flex"},
         justifyContent:'center',
         alignItems:'center',
         margin:'10px',
@@ -66,7 +66,7 @@ export default function Home() {
                     </Box>
                 </Grid>
 
-                <Grid item xs={6}  sx={{...layout_sx.grid_item_2}}>
+                <Grid item xs={12} md={4}  sx={{...layout_sx.grid_item_2}}>
                     <Box sx={{...item_sx.item_layout, display:'flex', flexDirection:'column', alignItems:'center',gap:'30px',height:'auto'}}>
                         <PostMaker></PostMaker>
                         <Divider sx={{border:'1px solid grey', width:'100%'}}></Divider>

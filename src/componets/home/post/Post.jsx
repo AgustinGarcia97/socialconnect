@@ -9,12 +9,12 @@ const Post = () => {
         post_layout:{
             display:'flex',
             justifyContent:'center',
-            height:{md:'380px'},
+            height:{md:'400px'},
             backgroundColor:'#4e3c5a',
             boxShadow: '0 5px 10px rgba(0, 0, 0, 0.1), 0 15px 40px rgba(0, 0, 0, 0.4)',
             flexDirection:'column',
             gap:'10px',
-            padding:'20px',
+            padding:{xs:'13px',md:'17px'},
             borderBottomLeftRadius:'30px',
             borderBottomRightRadius:'30px',
             borderLeftRadius:'30px',
@@ -26,7 +26,7 @@ const Post = () => {
             backgroundColor: '#100f0f',
             display:'flex',
             flexWrap:'wrap',
-            padding:'10px',
+            padding: {xs:'10px',md:'10px'},
             borderBottomLeftRadius:'20px',
             borderBottomRightRadius:'20px',
             borderLeftRadius:'20px',
@@ -37,9 +37,10 @@ const Post = () => {
 
         },
         actions_button:{
-            width:'20%',
-            height:'70%',
+            width:{xs:'50%',md:'25%'},
+            height:{xs:'90%',md:'60%'},
             backgroundColor:'#2e2a33',
+            fontSize: {xs:'12px', md:"15px"},
             border:'1px solid #4e3c5a',
             display:'flex',
             color:'white',
@@ -61,19 +62,19 @@ const Post = () => {
     return(
         <Box sx={{...post_style.post_layout}}>
             <Box sx={{...post_style.box_uno}}>
-                <Box sx={{width:{md:"90%"},display:'flex', gap:'10px'}}>
-                    <Typography sx={{color:'white',fontFamily:'Tisa Sans Pro Regular'}}>Foto</Typography>
+                <Box sx={{width:{md:"90%"},display:'flex', gap:'10px', alignItems:'center', }}>
+                    <Typography sx={{color:'white',fontFamily:'Tisa Sans Pro Regular',fontSize:'10px'}}>Foto</Typography>
 
-                    <Typography sx={{color:'white',fontFamily:'Tisa Sans Pro Regular'}}>Nombre del usuario</Typography>
+                    <Typography sx={{color:'white',fontFamily:'Tisa Sans Pro Regular',fontSize:{xs:'14px',md:'20px'}}}>Nombre del usuario</Typography>
                 </Box>
 
                 <Box>
-                    <Typography sx={{color:'white',fontFamily:'Tisa Sans Pro Regular'}}>Hora publicacion</Typography>
+                    <Typography sx={{color:'white',fontFamily:'Tisa Sans Pro Regular',fontSize:{xs:'15px',md:'20px'}}}>Hora publicacion</Typography>
                 </Box>
             </Box>
             <Box sx={{backgroundColor:'black'}}>
-                <Box sx={{display:'flex', flexDirection:'column',border:'1px solid black', gap:'20px', padding:'10px',}}>
-                    <Typography sx={{border:'1px solid black',padding:'10px',backgroundColor: '#837e7e', color:'#fff', fontFamily:'Tisa Sans Pro Regular'}}>
+                <Box sx={{display:'flex', flexDirection:'column',border:'1px solid black', gap:'20px', padding: {xs:'5px',md:'7px'}}}>
+                    <Typography sx={{border:'1px solid black',padding: {xs:'5px',md:'10px'},backgroundColor: '#837e7e', color:'#fff', fontFamily:'Tisa Sans Pro Regular', fontSize:{xs:'10px',md:'12px'}}}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor magna vel metus viverra,
                         vitae eleifend dolor ultricies. Morbi id est nec odio convallis fermentum. Nullam hendrerit placerat nisi,
                         id suscipit mi molestie ac. Proin suscipit nisl at nisi blandit, a mollis dolor consequat. Suspendisse potenti.
@@ -119,18 +120,18 @@ const PostLayout = () => {
         title: {
             fontFamily:'Maxwell-Bold',
             color:'#fff',
-            fontSize:'40px'
+            fontSize: {xs:'20px',md:'30px'}
         },
 
     }
     return(
         <Grid container sx={{display: 'flex', flexDirection:'row', justifyContent:'center', gap:'30px'}}>
-            <Grid item xs={12} >
+            <Grid item xs={10} >
                 <Box sx={{...layout.title_box}}>
-                    <Typography sx={{...layout.title}}>Timeliine</Typography>
+                    <Typography sx={{...layout.title}}>Timeline</Typography>
                 </Box>
             </Grid>
-            <Grid item xs={12} sm={12} md={12} sx={{display:'flex', flexDirection:'column', gap:'40px'}}>
+            <Grid item xs={12} sm={12} md={10} sx={{display:'flex', flexDirection:'column', gap:'40px'}}>
                 {sequence.map((item, index) => (
                     <Post key={index}></Post>
                 ))}

@@ -9,8 +9,8 @@ const PostMaker = (props) => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            height:{md:'170px'},
-            width:'80%',
+            height:{xs:'130px',md:'170px'},
+            width: {xs:'100%',md:'80%'},
             borderBottomLeftRadius:'30px',
             borderBottomRightRadius:'30px',
             borderLeftRadius:'30px',
@@ -27,7 +27,7 @@ const PostMaker = (props) => {
             alignItems: 'center',
             width:'100%',
             backgroundColor:'#4e3c5a',
-            height: {md:'109.5px'},
+            height: {xs:'90px',md:'109.5px'},
 
             borderLeftRadius:'30px',
             borderRightRadius:'30px',
@@ -40,7 +40,7 @@ const PostMaker = (props) => {
             width:'100%',
             gap:'20px',
             backgroundColor:'black',
-            height:'60px',
+            height:{xs:'40px', md:'60px'},
             borderBottomLeftRadius:'30px',
             borderBottomRightRadius:'30px',
             borderLeftRadius:'30px',
@@ -50,8 +50,8 @@ const PostMaker = (props) => {
 
         },
         box2_mediaTypo:{
-            width:'20%',
-            height:'60%',
+            width: {xs:'30%',md: '30%'},
+            height:{xs:'50%',md: '50%'},
             backgroundColor:'#2e2a33',
             border:'1px solid #4e3c5a',
             display:'flex',
@@ -65,6 +65,7 @@ const PostMaker = (props) => {
             borderTopLeftRadius:'30px',
             borderTopRightRadius:'30px',
             cursor:'pointer',
+            fontSize : {xs:'12px',md:'14px'},
 
         }
     }

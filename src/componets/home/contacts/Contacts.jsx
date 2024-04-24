@@ -40,7 +40,7 @@ const Contacts = () => {
         layout: {
             padding: '10px',
             height: 'auto',
-            display: 'flex',
+            display: {xs:'none',md:'flex'},
             flexDirection: 'column',
             gap: '30px',
             backgroundColor: '#4e3c5a',
@@ -49,7 +49,7 @@ const Contacts = () => {
         },
         trending_title: {
             display: 'flex',
-            padding: '10px',
+            padding: 'px',
             backgroundImage: "url('https://as1.ftcdn.net/v2/jpg/03/43/11/52/1000_F_343115242_jgrVUf48bhoCwxRCuFG88PA1AldvxFKX.jpg')",
             justifyContent: 'center',
             boxShadow: '0 5px 10px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.4)'
@@ -57,7 +57,7 @@ const Contacts = () => {
         },
         trending_typo: {
             fontFamily: 'Maxwell-Bold',
-            fontSize: {md: '35px'},
+            fontSize: {md: '30px'},
             letterSpacing: {md: '1px'},
             color: '#e6e5e5',
             textShadow: '2px 2px 6px rgba(0, 0, 0, 0.8)'
@@ -77,7 +77,7 @@ const Contacts = () => {
             cursor:'pointer',
 
 
-            border: '1px solid #e6e5e5',
+            border: '1px solid #3c3a3a',
             width:{md:'70%'},
             display:"flex",
             alignItems:'center',

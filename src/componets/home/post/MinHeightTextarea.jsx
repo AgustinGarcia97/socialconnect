@@ -52,6 +52,6 @@ export default function MinHeightTextarea() {
     );
 
     return (
-        <Textarea sx={{width:{xs:'95%'}}} aria-label="minimum height" minRows={3} placeholder="I'm gonna say..." />
+        <Textarea sx={{width:{xs:'90%',md:'95%'} }} aria-label="minimum height" minRows={3} placeholder="I'm gonna say..." />
     );
 }
