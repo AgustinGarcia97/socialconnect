@@ -9,7 +9,7 @@ const Trending = () => {
     const trending_sx = {
         layout: {
             padding:'10px',
-            height:'70%',
+            height:'auto',
             display:'flex',
             flexDirection:'column',
             gap:'30px',
@@ -20,9 +20,9 @@ const Trending = () => {
         trending_title: {
             display:'flex',
             padding:'10px',
-            border: '2px solid black',
             backgroundImage: "url('https://as1.ftcdn.net/v2/jpg/03/43/11/52/1000_F_343115242_jgrVUf48bhoCwxRCuFG88PA1AldvxFKX.jpg')",
             justifyContent:'center',
+            boxShadow: '0 5px 10px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.4)'
 
         },
         trending_typo:{

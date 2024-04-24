@@ -3,6 +3,9 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import PostMaker from "../componets/home/post/PostMaker.jsx";
 import Trending from "../componets/home/trendring/Trending.jsx";
+import Contacts from "../componets/home/contacts/Contacts.jsx";
+import  {Post,PostLayout} from "../componets/home/post/Post.jsx";
+import {Divider} from "@mui/material";
 
 const layout_sx = {
     grid_container:{
@@ -10,8 +13,9 @@ const layout_sx = {
         marginLeft:'0px',
         padding:'10px',
         justifyContent:'center',
-        height:{xs:'1000px',md:'1500px'},
-        backgroundColor:'#422c80'
+        height:{xs:'1000px',md:'auto'},
+
+
 
     },
     grid_item_1:{
@@ -26,6 +30,7 @@ const layout_sx = {
         justifyContent:'center',
         alignItems:'center',
         margin:'10px',
+
     },
     grid_item_3:{
 
@@ -52,22 +57,26 @@ const item_sx = {
 
 export default function Home() {
     return (
-        <Box sx={{ flexGrow: 1 , height:'2000px',width:'100%'}}>
+        <Box sx={{ flexGrow: 1 , height:'auto',width:'100%', backgroundColor:'#422c80',}}>
             <Grid container  sx={{ ...layout_sx.grid_container}}>
-                <Grid item xs={2.6}  sx={{...layout_sx.grid_item_1}}> {/* Cambiado de xs={8} a xs={6} */}
+
+                <Grid item xs={2.6}  sx={{...layout_sx.grid_item_1}}>
                     <Box sx={{...item_sx.item_layout,}}>
-
+                        <Contacts></Contacts>
                     </Box>
-
                 </Grid>
-                <Grid item xs={6}  sx={{...layout_sx.grid_item_2}}> {/* Cambiado de xs={4} a xs={6} */}
-                    <Box sx={{...item_sx.item_layout, display:'flex', justifyContent:'center'}}>
+
+                <Grid item xs={6}  sx={{...layout_sx.grid_item_2}}>
+                    <Box sx={{...item_sx.item_layout, display:'flex', flexDirection:'column', alignItems:'center',gap:'30px',height:'auto'}}>
                         <PostMaker></PostMaker>
+                        <Divider sx={{border:'1px solid grey', width:'100%'}}></Divider>
+                        <PostLayout></PostLayout>
                     </Box>
                 </Grid>
-                <Grid item xs={2.6}  sx={{...layout_sx.grid_item_3}}> {/* Cambiado de xs={4} a xs={6} */}
+
+                <Grid item xs={2.6}  sx={{...layout_sx.grid_item_3}}>
                     <Box sx={{...item_sx.item_layout,}}>
-                            <Trending></Trending>
+                        <Trending></Trending>
                     </Box>
                 </Grid>
 
