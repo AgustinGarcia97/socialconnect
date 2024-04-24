@@ -23,7 +23,7 @@ const layout_sx = {
         margin:'10px',
         display: {xs:'none',md:"flex"},
         justifyContent:'center',
-        alignItems:'center',
+
     },
     grid_item_2:{
         display:'flex',
@@ -36,7 +36,6 @@ const layout_sx = {
 
         display: {xs:'none',md:"flex"},
         justifyContent:'center',
-        alignItems:'center',
         margin:'10px',
     },
 };
@@ -57,7 +56,12 @@ const item_sx = {
 
 export default function Home() {
     return (
-        <Box sx={{ flexGrow: 1 , height:'auto',width:'100%', backgroundColor:'#422c80',}}>
+        <Box sx={{ flexGrow: 1 , height:'auto',width:'100%', backgroundImage:'url("https://images.wallpapersden.com/image/download/new-kurzgesagt-black-hole-art-minimalist_bG1pbmeUmZqaraWkpJRsa21lrWloZ2U.jpg")',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+
+        }}>
             <Grid container  sx={{ ...layout_sx.grid_container}}>
 
                 <Grid item xs={2.6}  sx={{...layout_sx.grid_item_1}}>

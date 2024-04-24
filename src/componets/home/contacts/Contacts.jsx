@@ -43,14 +43,14 @@ const Contacts = () => {
             display: {xs:'none',md:'flex'},
             flexDirection: 'column',
             gap: '30px',
-            backgroundColor: '#4e3c5a',
+            backgroundColor:'#a54bb1',
             boxShadow: '0 5px 10px rgba(0, 0, 0, 0.1), 0 15px 40px rgba(0, 0, 0, 0.4)'
 
         },
         trending_title: {
             display: 'flex',
             padding: 'px',
-            backgroundImage: "url('https://as1.ftcdn.net/v2/jpg/03/43/11/52/1000_F_343115242_jgrVUf48bhoCwxRCuFG88PA1AldvxFKX.jpg')",
+            backgroundColor: '#ad89dd',
             justifyContent: 'center',
             boxShadow: '0 5px 10px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.4)'
 
@@ -64,11 +64,8 @@ const Contacts = () => {
         },
         treding_list:{
             padding: '10px',
-            border: '2px solid black',
-            backgroundImage: "url('https://w0.peakpx.com/wallpaper/986/611/HD-wallpaper-galax-dark-galaxy.jpg')",
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
+
+            backgroundColor: '#ad89dd',
             color: 'white',
         },
         contact_box_friend:{
@@ -80,7 +77,7 @@ const Contacts = () => {
             border: '1px solid #3c3a3a',
             width:{md:'70%'},
             display:"flex",
-            alignItems:'center',
+            alignItems:'start',
             justifyContent: 'start',
             borderBottomLeftRadius:'30px',
             borderBottomRightRadius:'30px',
@@ -92,7 +89,6 @@ const Contacts = () => {
 
         },
         contact_item_typo:{
-
             padding:'5px',
             color:'#e6e5e5',
             fontFamily: 'Tisa Sans Pro Regular',

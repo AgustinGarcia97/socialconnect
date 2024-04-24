@@ -9,7 +9,7 @@ const PostMaker = (props) => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            height:{xs:'130px',md:'170px'},
+
             width: {xs:'100%',md:'80%'},
             borderBottomLeftRadius:'30px',
             borderBottomRightRadius:'30px',
@@ -26,7 +26,7 @@ const PostMaker = (props) => {
             justifyContent: 'center',
             alignItems: 'center',
             width:'100%',
-            backgroundColor:'#4e3c5a',
+            backgroundColor:'#a54bb1',
             height: {xs:'90px',md:'109.5px'},
 
             borderLeftRadius:'30px',
@@ -39,7 +39,7 @@ const PostMaker = (props) => {
             justifyContent: 'center',
             width:'100%',
             gap:'20px',
-            backgroundColor:'black',
+            backgroundColor: 'rgba(37,0,123,0.75)',
             height:{xs:'40px', md:'60px'},
             borderBottomLeftRadius:'30px',
             borderBottomRightRadius:'30px',
@@ -52,7 +52,7 @@ const PostMaker = (props) => {
         box2_mediaTypo:{
             width: {xs:'30%',md: '30%'},
             height:{xs:'50%',md: '50%'},
-            backgroundColor:'#2e2a33',
+            backgroundColor: '#ad89dd',
             border:'1px solid #4e3c5a',
             display:'flex',
             color:'white',

@@ -22,7 +22,7 @@ export default function MinHeightTextarea() {
         600: '#6B7A90',
         700: '#434D5B',
         800: '#303740',
-        900: '#1C2025',
+        900: 'rgba(37,0,123,0.75)',
     };
 
     const Textarea = styled(BaseTextareaAutosize)(
@@ -34,7 +34,7 @@ export default function MinHeightTextarea() {
     line-height: 1.5;
     padding: 8px 12px;
     border-radius: 8px;
-    color: ${theme.palette.mode === 'dark' ? grey[300] : grey[300]};
+    color: ${theme.palette.mode === 'dark' ? grey[50] : grey[50]};
     background: ${theme.palette.mode === 'dark' ? grey[900] : grey[900]};
     border: 1px solid ${theme.palette.mode === 'dark' ? grey[700] : grey[700]};
     box-shadow: 0px 2px 2px ${theme.palette.mode === 'dark' ? grey[900] : grey[70]};
@@ -52,6 +52,15 @@ export default function MinHeightTextarea() {
     );
 
     return (
-        <Textarea sx={{width:{xs:'90%',md:'95%'} }} aria-label="minimum height" minRows={3} placeholder="I'm gonna say..." />
+        <Textarea sx={{
+            width:{xs:'90%',md:'95%'},
+            '&::placeholder': {
+            color: '#b9aeca' // Cambia el color del placeholder a rojo
+        }
+
+        }} aria-label="minimum height" minRows={3} placeholder="I'm gonna say..."
+
+
+        />
     );
 }

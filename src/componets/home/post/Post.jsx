@@ -9,9 +9,9 @@ const Post = () => {
         post_layout:{
             display:'flex',
             justifyContent:'center',
-            height:{md:'400px'},
-            backgroundColor:'#4e3c5a',
-            boxShadow: '0 5px 10px rgba(0, 0, 0, 0.1), 0 15px 40px rgba(0, 0, 0, 0.4)',
+            height:{md:'auto'},
+            backgroundColor:'#a54bb1',
+            boxShadow: '0 5px 10px rgba(0, 0, 0, 0.1), 0 15px 40px rgba(0, 0, 0, 0.9)',
             flexDirection:'column',
             gap:'10px',
             padding:{xs:'13px',md:'17px'},
@@ -23,7 +23,7 @@ const Post = () => {
             borderTopRightRadius:'30px',
         },
         box_uno:{
-            backgroundColor: '#100f0f',
+            backgroundColor: '#ad89dd',
             display:'flex',
             flexWrap:'wrap',
             padding: {xs:'10px',md:'10px'},
@@ -39,7 +39,7 @@ const Post = () => {
         actions_button:{
             width:{xs:'50%',md:'25%'},
             height:{xs:'90%',md:'60%'},
-            backgroundColor:'#2e2a33',
+            backgroundColor:'#a54bb1',
             fontSize: {xs:'12px', md:"15px"},
             border:'1px solid #4e3c5a',
             display:'flex',
@@ -72,17 +72,14 @@ const Post = () => {
                     <Typography sx={{color:'white',fontFamily:'Tisa Sans Pro Regular',fontSize:{xs:'15px',md:'20px'}}}>Hora publicacion</Typography>
                 </Box>
             </Box>
-            <Box sx={{backgroundColor:'black'}}>
-                <Box sx={{display:'flex', flexDirection:'column',border:'1px solid black', gap:'20px', padding: {xs:'5px',md:'7px'}}}>
-                    <Typography sx={{border:'1px solid black',padding: {xs:'5px',md:'10px'},backgroundColor: '#837e7e', color:'#fff', fontFamily:'Tisa Sans Pro Regular', fontSize:{xs:'10px',md:'12px'}}}>
+            <Box sx={{ backgroundColor: '#ad89dd',}}>
+                <Box sx={{display:'flex', flexDirection:'column', gap:'20px', padding: {xs:'5px',md:'7px'}}}>
+                    <Typography sx={{padding: {xs:'5px',md:'10px'},backgroundColor: 'rgba(37,0,123,0.75)', color:'#fff', fontFamily:'Tisa Sans Pro Regular', fontSize:{xs:'10px',md:'13px'}}}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor magna vel metus viverra,
                         vitae eleifend dolor ultricies. Morbi id est nec odio convallis fermentum. Nullam hendrerit placerat nisi,
                         id suscipit mi molestie ac. Proin suscipit nisl at nisi blandit, a mollis dolor consequat. Suspendisse potenti.
                         Nulla non pharetra turpis. Duis at velit sit amet metus vestibulum rhoncus non eget eros.
-                        Fusce sit amet dui et mi lobortis finibus. Vivamus a suscipit purus. Nullam vel consectetur leo.
-                        Nulla facilisi. In vel tincidunt enim, in congue ligula. Fusce quis volutpat nisi. Vivamus hendrerit,
-                        nisi quis ultricies lacinia, justo nulla pellentesque mauris, nec tristique purus ex id felis.
-                        Phasellus congue, arcu id maximus tincidunt, nisl ipsum vehicula metus, a feugiat ex risus nec mauris.
+
                     </Typography>
                     <Box sx={{display:'flex', justifyContent:'space-around',height:{md:"50px"}}}>
                         <Box sx={{width:'90%', display:'flex', flexDirection:'row', justifyContent:'center' ,gap:'10px', alignItems:'center'}}>
@@ -103,10 +100,7 @@ const PostLayout = () => {
     const layout= {
         title_box:{
             display: 'flex',
-            backgroundImage: "url('https://as1.ftcdn.net/v2/jpg/03/43/11/52/1000_F_343115242_jgrVUf48bhoCwxRCuFG88PA1AldvxFKX.jpg')",
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
+            backgroundColor: '#ad89dd',
             borderBottomLeftRadius:'30px',
             borderBottomRightRadius:'30px',
             borderLeftRadius:'30px',

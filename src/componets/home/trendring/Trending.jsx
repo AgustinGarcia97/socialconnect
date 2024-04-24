@@ -13,14 +13,14 @@ const Trending = () => {
             display:'flex',
             flexDirection:'column',
             gap:'30px',
-            backgroundColor:'#4e3c5a',
+            backgroundColor:'#a54bb1',
             boxShadow: '0 5px 10px rgba(0, 0, 0, 0.1), 0 15px 40px rgba(0, 0, 0, 0.4)'
 
         },
         trending_title: {
             display:'flex',
             padding:'5px',
-            backgroundImage: "url('https://as1.ftcdn.net/v2/jpg/03/43/11/52/1000_F_343115242_jgrVUf48bhoCwxRCuFG88PA1AldvxFKX.jpg')",
+            backgroundColor: '#ad89dd',
             justifyContent:'center',
             boxShadow: '0 5px 10px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.4)'
 
@@ -34,11 +34,8 @@ const Trending = () => {
         },
         treding_list:{
             padding: '10px',
-            border: '2px solid black',
-            backgroundImage: "url('https://w0.peakpx.com/wallpaper/986/611/HD-wallpaper-galax-dark-galaxy.jpg')",
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'center',
+
+            backgroundColor: '#ad89dd',
             color: 'white',
 
 
@@ -46,7 +43,7 @@ const Trending = () => {
         trending_item_typo:{
             border: '1px solid #3c3a3a',
             padding:'5px',
-            color:'#e6e5e5',
+            color:'#a54bb1',
             fontFamily: 'Tisa Sans Pro Regular',
             fontSize:{md:'15px'},
             paddingLeft:{md:'20px'},
